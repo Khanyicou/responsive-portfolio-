@@ -189,24 +189,31 @@ When I'm not coding, you can find me exploring new tech trends, contributing to 
             </section>
 
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+<section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <form action="javascript:redirectToThankYouPage();" class="contact__form">
-    <input type="text" placeholder="Name" class="contact__input" required>
-    <input type="email" placeholder="Email" class="contact__input" required>
-    <textarea placeholder="Your message" cols="0" rows="10" class="contact__input" required></textarea>
-    <input type="submit" value="Submit" class="contact__button button">
-</form>
+    <div class="contact__container bd-grid">
+        <form action="" class="contact__form" id="contactForm">
+            <input type="text" placeholder="Name" class="contact__input">
+            <input type="email" placeholder="Email" class="contact__input">
+            <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Your Message"></textarea>
+            <input type="button" value="Submit" class="contact__button button" onclick="showThankYouMessage()">
+        </form>
+        <p id="thankYouMessage" style="display:none;">Thank you for getting in touch! We'll get back to you soon.</p>
+    </div>
+</section>
+</main>
 
+<!--===== JS TO SHOW THANK YOU MESSAGE =====-->
 <script>
-    function redirectToThankYouPage() {
-        // Perform any additional processing (e.g., form validation, sending data)
-        window.location.href = "thank-you.html"; // Redirect to thank-you page
+    function showThankYouMessage() {
+        // Hide the form
+        document.getElementById('contactForm').style.display = 'none';
+        // Show the thank you message
+        document.getElementById('thankYouMessage').style.display = 'block';
     }
 </script>
+
 
 
 

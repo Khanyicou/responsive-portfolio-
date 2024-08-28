@@ -233,6 +233,22 @@ img {
 .button:hover {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
+/* Sign Up and Login Form Styles */
+.signup__input, .login__input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.signup__button, .login__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* ===== ABOUT =====*/
 .about__container {

@@ -45,6 +45,38 @@
                 </div>
 
                 <div class="home__social">
+
+                    <!--===== SIGN UP PAGE =====-->
+<section class="signup section" id="signup">
+    <h2 class="section-title">Sign Up</h2>
+
+    <div class="signup__container bd-grid">
+        <form action="" class="signup__form">
+            <input type="text" placeholder="Username" class="signup__input">
+            <input type="email" placeholder="Email" class="signup__input">
+            <input type="password" placeholder="Password" class="signup__input">
+            <input type="password" placeholder="Confirm Password" class="signup__input">
+            <input type="button" value="Sign Up" class="signup__button button" onclick="showLoginPage()">
+        </form>
+        <p>Already have an account? <a href="#" onclick="showLoginPage()">Login here</a></p>
+    </div>
+</section>
+
+                    <!--===== LOGIN PAGE =====-->
+<section class="login section" id="login" style="display:none;">
+    <h2 class="section-title">Login</h2>
+
+    <div class="login__container bd-grid">
+        <form action="" class="login__form">
+            <input type="text" placeholder="Username" class="login__input">
+            <input type="password" placeholder="Password" class="login__input">
+            <input type="button" value="Login" class="login__button button" onclick="login()">
+        </form>
+        <p>Don't have an account? <a href="#" onclick="showSignUpPage()">Sign up here</a></p>
+    </div>
+</section>
+
+                    
     <!-- LinkedIn -->
     <a href="https://www.linkedin.com/in/khanyisa-preciouskhanyisa-ba1668230" class="home__social-icon" target="_blank">
         <i class='bx bxl-linkedin'></i>

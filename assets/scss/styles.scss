@@ -505,3 +505,100 @@ img{
         }
     }
 }
+/* Existing CSS code */
+
+/*===== NEW STYLES =====*/
+
+/* Additional styles for the signup section */
+.signup {
+    padding: 3rem 0;
+    background-color: #f9f9f9;
+
+    &__container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: .5rem;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__form label {
+        margin-bottom: .5rem;
+        font-weight: var(--font-semi);
+    }
+    &__form input {
+        margin-bottom: 1rem;
+        padding: .75rem;
+        border-radius: .5rem;
+        border: 1px solid var(--second-color);
+    }
+    &__form button {
+        padding: .75rem;
+        background-color: var(--first-color);
+        color: #fff;
+        border: none;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: darken(var(--first-color), 10%);
+        }
+    }
+}
+
+/* Additional styles for the login section */
+.login {
+    padding: 3rem 0;
+    background-color: #f9f9f9;
+
+    &__container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: .5rem;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__form label {
+        margin-bottom: .5rem;
+        font-weight: var(--font-semi);
+    }
+    &__form input {
+        margin-bottom: 1rem;
+        padding: .75rem;
+        border-radius: .5rem;
+        border: 1px solid var(--second-color);
+    }
+    &__form button {
+        padding: .75rem;
+        background-color: var(--first-color);
+        color: #fff;
+        border: none;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: darken(var(--first-color), 10%);
+        }
+    }
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 576px) {
+    .signup, .login {
+        padding: 2rem 0;
+    }
+    .signup__container, .login__container {
+        padding: 1rem;
+    }
+}

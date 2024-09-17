@@ -602,3 +602,23 @@ img{
         padding: 1rem;
     }
 }
+.signup__input, .login__input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup__button, .login__button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup__button:hover, .login__button:hover {
+    background-color: #0056b3;
+}
